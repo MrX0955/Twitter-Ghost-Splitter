@@ -1,6 +1,5 @@
 import os
 import platform
-
 import requests as mrx
 from pystyle    import Colors, Colorate
 
