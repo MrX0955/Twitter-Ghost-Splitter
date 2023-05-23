@@ -28,10 +28,10 @@ class main:
             headers={
                 "Authorization": f"Bearer AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA",
                 "x-guest-token": self.get_gt()})
-        if splitter.json()["num_results"] == 1:
-            print(Colorate.Horizontal(Colors.red_to_white, f"          {self.query}", 2))
+        if splitter.json()["num_results"] > 0:
             print(Colorate.Horizontal(Colors.white_to_green, "\n<-- Non Ghost Account Informations -->", 3))
-            print(" >> Verified: ", splitter.json()["users"][0]["verified"], "\n",
+            print(" >> Username: ", splitter.json()["users"][0]["screen_name"], "\n",
+                  ">> Verified: ", splitter.json()["users"][0]["verified"], "\n",
                   ">> Blue Tick: ", splitter.json()["users"][0]["ext_is_blue_verified"], "\n",
                   ">> Blocked: ", splitter.json()["users"][0]["is_blocked"], "\n",
                   ">> Badges: ", splitter.json()["users"][0]["badges"], )
