@@ -1,4 +1,4 @@
-# Twitter-Ghost-Splitter
+# Twitter Ghost Splitter
 
 Example Outputs down there >>
 
